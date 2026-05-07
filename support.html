@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — MacBuddy</title>
+  <meta name="description" content="Report a bug, suggest a feature, or ask a question about MacBuddy." />
+  <meta name="theme-color" content="#f7f3ec" />
+  <link rel="icon" type="image/png" href="img/macbuddy_icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Support page specific styles */
+    .support-page { padding: 48px 28px 96px; max-width: 720px; margin: 0 auto; }
+    .support-page .section-head { margin-bottom: 36px; text-align: left; }
+    .support-page .section-head h1 {
+      font-size: clamp(28px, 4vw, 36px);
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+      font-weight: 800;
+    }
+    .support-page .section-head p { text-align: left; }
+
+    .kind-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .kind-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--line);
+      background: var(--bg-card);
+      color: var(--ink-soft);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .kind-tab:hover { border-color: var(--ink-faint); color: var(--ink); }
+    .kind-tab.active {
+      background: var(--ink);
+      color: #fff;
+      border-color: var(--ink);
+    }
+    .kind-tab .tab-icon { font-size: 16px; }
+
+    .form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .form-group { margin-bottom: 20px; }
+    .form-group:last-child { margin-bottom: 0; }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+    .form-group .hint {
+      display: block;
+      font-size: 13px;
+      color: var(--ink-faint);
+      margin-bottom: 6px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--ink);
+      background: var(--bg);
+      transition: border-color 0.15s ease;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+    .form-group textarea { min-height: 120px; resize: vertical; }
+
+    .conditional { display: none; }
+    .conditional.visible { display: block; }
+
+    .submit-row {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.12s ease;
+    }
+    .btn-submit:hover { background: #3a5fd9; transform: translateY(-1px); }
+    .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+    .status-msg {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .status-msg.success { color: var(--good); }
+    .status-msg.error { color: #c0392b; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-soft);
+      margin-bottom: 24px;
+    }
+    .back-link:hover { color: var(--ink); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo">
+      <img src="img/menubar_logo.png" alt="" class="logo-mark" />
+      <span class="logo-word">MacBuddy</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="support-page">
+    <a href="/" class="back-link">&larr; Back to MacBuddy</a>
+
+    <div class="section-head">
+      <h1>Support & Feedback</h1>
+      <p>Found a bug? Want a new feature? Have a question? Submit it below — no GitHub account needed. Your report goes straight to our issue tracker.</p>
+    </div>
+
+    <div class="kind-tabs">
+      <button class="kind-tab active" data-kind="bug">
+        <span class="tab-icon">&#x1F41B;</span> Report a Bug
+      </button>
+      <button class="kind-tab" data-kind="feature">
+        <span class="tab-icon">&#x2728;</span> Suggest a Feature
+      </button>
+      <button class="kind-tab" data-kind="question">
+        <span class="tab-icon">&#x1F4AC;</span> Ask a Question
+      </button>
+    </div>
+
+    <form id="issue-form" class="form-card">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <span class="hint" id="title-hint">A short summary of the bug</span>
+        <input type="text" id="title" name="title" required maxlength="200" placeholder="e.g. Screenshot tool crashes on dual monitors" />
+      </div>
+
+      <div class="form-group">
+        <label for="description" id="desc-label">Description</label>
+        <span class="hint" id="desc-hint">Describe what happened and what you expected</span>
+        <textarea id="description" name="description" required maxlength="5000" placeholder="Describe the issue in detail..."></textarea>
+      </div>
+
+      <div class="form-group conditional" id="steps-group">
+        <label for="steps">Steps to Reproduce</label>
+        <span class="hint">How can we reproduce this bug?</span>
+        <textarea id="steps" name="steps" maxlength="2000" rows="4" placeholder="1. Open MacBuddy&#10;2. Click on...&#10;3. ..."></textarea>
+      </div>
+
+      <div class="form-group conditional" id="env-group">
+        <label for="environment">Environment</label>
+        <span class="hint">macOS version, MacBuddy version, Mac model</span>
+        <input type="text" id="environment" name="environment" maxlength="200" placeholder="e.g. macOS 15.1, MacBuddy 1.2, MacBook Air M2" />
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact (optional)</label>
+        <span class="hint">Email if you'd like us to follow up with you</span>
+        <input type="email" id="contact" name="contact" maxlength="200" placeholder="you@example.com" />
+      </div>
+
+      <div class="submit-row">
+        <button type="submit" class="btn-submit" id="submit-btn">Submit Report</button>
+        <span class="status-msg" id="status-msg"></span>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="img/menubar_logo.png" alt="" class="logo-mark" />
+        <span>MacBuddy &middot; by ATLAI</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/#features">Features</a>
+        <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <p class="footer-fine">&copy; <span id="year">2026</span> ATLAI. Made with &#10084;&#65039; on a Mac.</p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    const WORKER_URL = 'https://macbuddy-issues.haopeng-yu.workers.dev';
+
+    let currentKind = 'bug';
+
+    const form = document.getElementById('issue-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const statusMsg = document.getElementById('status-msg');
+    const titleHint = document.getElementById('title-hint');
+    const descLabel = document.getElementById('desc-label');
+    const descHint = document.getElementById('desc-hint');
+    const stepsGroup = document.getElementById('steps-group');
+    const envGroup = document.getElementById('env-group');
+
+    const kindConfig = {
+      bug: {
+        titleHint: 'A short summary of the bug',
+        titlePlaceholder: 'e.g. Screenshot tool crashes on dual monitors',
+        descLabel: 'Description',
+        descHint: 'Describe what happened and what you expected',
+        descPlaceholder: 'Describe the issue in detail...',
+        showSteps: true,
+        showEnv: true,
+        submitText: 'Submit Report',
+      },
+      feature: {
+        titleHint: 'A short name for the feature',
+        titlePlaceholder: 'e.g. Dark mode support',
+        descLabel: 'Feature Description',
+        descHint: 'What would this feature do and why is it useful?',
+        descPlaceholder: 'Describe the feature you\'d like to see...',
+        showSteps: false,
+        showEnv: false,
+        submitText: 'Submit Suggestion',
+      },
+      question: {
+        titleHint: 'What is your question about?',
+        titlePlaceholder: 'e.g. How to set up Space Shortcut?',
+        descLabel: 'Details',
+        descHint: 'Provide context so we can help you',
+        descPlaceholder: 'Describe your question and what you\'ve tried...',
+        showSteps: false,
+        showEnv: true,
+        submitText: 'Submit Question',
+      },
+    };
+
+    function updateForm(kind) {
+      currentKind = kind;
+      const cfg = kindConfig[kind];
+
+      document.querySelectorAll('.kind-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.kind === kind);
+      });
+
+      titleHint.textContent = cfg.titleHint;
+      document.getElementById('title').placeholder = cfg.titlePlaceholder;
+      descLabel.textContent = cfg.descLabel;
+      descHint.textContent = cfg.descHint;
+      document.getElementById('description').placeholder = cfg.descPlaceholder;
+      stepsGroup.classList.toggle('visible', cfg.showSteps);
+      envGroup.classList.toggle('visible', cfg.showEnv);
+      submitBtn.textContent = cfg.submitText;
+
+      statusMsg.textContent = '';
+      statusMsg.className = 'status-msg';
+    }
+
+    document.querySelectorAll('.kind-tab').forEach(tab => {
+      tab.addEventListener('click', () => updateForm(tab.dataset.kind));
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const title = document.getElementById('title').value.trim();
+      const description = document.getElementById('description').value.trim();
+      const steps = document.getElementById('steps').value.trim();
+      const environment = document.getElementById('environment').value.trim();
+      const contact = document.getElementById('contact').value.trim();
+
+      if (!title || !description) {
+        statusMsg.textContent = 'Please fill in the title and description.';
+        statusMsg.className = 'status-msg error';
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+      statusMsg.textContent = '';
+
+      try {
+        const res = await fetch(WORKER_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            kind: currentKind,
+            title,
+            description,
+            steps: steps || undefined,
+            environment: environment || undefined,
+            contact: contact || undefined,
+          }),
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          statusMsg.textContent = 'Submitted successfully! Thank you for your feedback.';
+          statusMsg.className = 'status-msg success';
+          form.reset();
+          updateForm(currentKind);
+        } else {
+          statusMsg.textContent = data.error || 'Something went wrong. Please try again.';
+          statusMsg.className = 'status-msg error';
+        }
+      } catch (err) {
+        statusMsg.textContent = 'Network error. Please check your connection and try again.';
+        statusMsg.className = 'status-msg error';
+      }
+
+      submitBtn.disabled = false;
+      submitBtn.textContent = kindConfig[currentKind].submitText;
+    });
+
+    // Init — check URL param
+    const urlKind = new URLSearchParams(window.location.search).get('kind');
+    updateForm(kindConfig[urlKind] ? urlKind : 'bug');
+
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  })();
+  </script>
+</body>
+</html>

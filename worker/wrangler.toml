@@ -1,0 +1,7 @@
+name = "macbuddy-issues"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+GITHUB_REPO = "ATLAI-TECH/MacBuddyTools"
+ALLOWED_ORIGIN = "https://macbuddy.atlai.co.uk"

@@ -1,6 +1,7 @@
 # Secrets — never commit
 .env
 .env.*
+.cloudflare
 !.env.example
 
 # macOS
