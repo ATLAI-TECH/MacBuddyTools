@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MacBuddy — Your friendly Mac companion</title>
+  <meta name="description" content="MacBuddy is a tiny, friendly menu-bar app for macOS. Six handy tools — Space Shortcut, Screenshot, Keep Awake, Clipboard, System Monitor, Picture Converter — wrapped in one tidy app." />
+  <meta name="theme-color" content="#f7f3ec" />
+  <link rel="icon" type="image/png" href="img/macbuddy_icon.png" />
+  <link rel="apple-touch-icon" href="img/macbuddy_icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <meta property="og:title" content="MacBuddy — Your friendly Mac companion" />
+  <meta property="og:description" content="Six handy menu-bar tools wrapped in one tidy macOS app." />
+  <meta property="og:image" content="img/macbuddy_icon.png" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="logo">
+      <img src="img/menubar_logo.png" alt="" class="logo-mark" />
+      <span class="logo-word">MacBuddy</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#support">Support</a>
+      <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">macOS · Menu-bar app</span>
+          <h1>Your friendly<br />Mac companion.</h1>
+          <p class="lede">
+            Six handy menu-bar tools, wrapped in one tidy app. Capture screenshots,
+            launch apps with Space, keep your Mac awake, browse clipboard history,
+            watch CPU + memory, and convert pictures — all from a single buddy in
+            your menu bar.
+          </p>
+          <div class="cta-row">
+            <a href="#download" class="btn btn-primary">
+              <span>Download MacBuddy</span>
+              <small>macOS 14+ · Free</small>
+            </a>
+            <a href="#features" class="btn btn-ghost">See what's inside →</a>
+          </div>
+          <p class="hero-meta">Open-source-ish. No accounts. No subscriptions.</p>
+        </div>
+
+        <div class="hero-art">
+          <img src="img/screenshots/general.png" alt="MacBuddy Settings window" class="hero-shot" />
+          <img src="img/macbuddy_icon.png" alt="MacBuddy app icon" class="hero-icon" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FEATURES ====== -->
+    <section id="features" class="features">
+      <div class="section-head">
+        <h2>Six tools, one menu-bar app</h2>
+        <p>Each tool is independent — turn off the ones you don't need from Settings.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">␣</div>
+          <h3>Space Shortcut</h3>
+          <p>Hold <kbd>Space</kbd> and tap a key to instantly launch or focus your most-used apps.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⌘⇧4</div>
+          <h3>Screenshot</h3>
+          <p>Capture a region of the screen with a global hotkey, then annotate, copy, save, or pin it.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">☕</div>
+          <h3>Keep Awake</h3>
+          <p>Prevents your Mac from sleeping or dimming the display for a chosen duration.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📋</div>
+          <h3>Clipboard</h3>
+          <p>Keeps a history of recent clipboard items so you can paste anything you copied earlier.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📈</div>
+          <h3>System Monitor</h3>
+          <p>Adds a menu-bar status item showing live CPU, memory, and other system stats.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🖼️</div>
+          <h3>Picture Converter</h3>
+          <p>Drag-and-drop converter between PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====== SCREENSHOTS ====== -->
+    <section id="screenshots" class="shots">
+      <div class="section-head">
+        <h2>A peek inside</h2>
+        <p>Settings, hotkeys, clipboard history, and the menu-bar status item.</p>
+      </div>
+
+      <div class="shot-row">
+        <figure class="shot">
+          <img src="img/screenshots/space-shortcut.png" alt="Space Shortcut bindings" loading="lazy" />
+          <figcaption>Bind any app to <kbd>Space</kbd> + key — chord HUD shows on hold.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/screenshots/clipboard.png" alt="Clipboard history" loading="lazy" />
+          <figcaption>Search the last <em>n</em> things you copied. Pin the ones you reuse.</figcaption>
+        </figure>
+      </div>
+
+      <div class="shot-row">
+        <figure class="shot wide">
+          <img src="img/screenshots/screenshot-tool.png" alt="Screenshot annotator" loading="lazy" />
+          <figcaption>Region capture → annotate → copy / save / pin. Five tools, colour palette, undo.</figcaption>
+        </figure>
+      </div>
+
+      <div class="shot-row">
+        <figure class="shot">
+          <img src="img/screenshots/system-monitor.png" alt="System Monitor in menu bar" loading="lazy" />
+          <figcaption>Live CPU + memory in the menu bar, your way.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/screenshots/general.png" alt="General settings" loading="lazy" />
+          <figcaption>Toggle features on or off. Hover the info dot for what each does.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====== DOWNLOAD ====== -->
+    <section id="download" class="download-band">
+      <div class="download-inner">
+        <img src="img/macbuddy_icon.png" alt="" class="download-icon" />
+        <div>
+          <h2>Get MacBuddy</h2>
+          <p>Free for personal use. macOS 14 (Sonoma) or later. Apple Silicon &amp; Intel.</p>
+          <div class="cta-row">
+            <a href="https://github.com/ATLAI-TECH/MacBuddyTools/releases" target="_blank" rel="noopener" class="btn btn-primary">
+              <span>Download latest release</span>
+              <small>from GitHub</small>
+            </a>
+            <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener" class="btn btn-ghost">View source on GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SUPPORT ====== -->
+    <section id="support" class="support">
+      <div class="section-head">
+        <h2>Support &amp; feedback</h2>
+        <p>Found a bug? Want a new tool inside MacBuddy? Tell us — issues land straight in the project's GitHub.</p>
+      </div>
+
+      <div class="support-grid">
+        <a class="support-card support-bug" href="#" data-issue-kind="bug">
+          <div class="support-icon" aria-hidden="true">🐛</div>
+          <h3>Report a bug</h3>
+          <p>Something not working? Open a bug report — we'll be notified on GitHub.</p>
+          <span class="support-cta">Open bug template →</span>
+        </a>
+
+        <a class="support-card support-feature" href="#" data-issue-kind="feature">
+          <div class="support-icon" aria-hidden="true">✨</div>
+          <h3>Suggest a feature</h3>
+          <p>Got an idea for a new tool inside MacBuddy? Pitch it.</p>
+          <span class="support-cta">Open feature template →</span>
+        </a>
+
+        <a class="support-card support-question" href="#" data-issue-kind="question">
+          <div class="support-icon" aria-hidden="true">💬</div>
+          <h3>Ask a question</h3>
+          <p>Stuck on permissions or hotkeys? Drop a question.</p>
+          <span class="support-cta">Open question template →</span>
+        </a>
+      </div>
+
+      <p class="support-note">
+        You'll need a GitHub account — we use GitHub Issues so the conversation stays public and searchable.
+        Prefer email? <a href="mailto:atlasbioin4@gmail.com?subject=MacBuddy%20feedback">atlasbioin4@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="img/menubar_logo.png" alt="" class="logo-mark" />
+        <span>MacBuddy · by ATLAI</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#support">Support</a>
+        <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://termbuddy.atlai.co.uk/" target="_blank" rel="noopener">TermBuddy ↗</a>
+      </nav>
+      <p class="footer-fine">© <span id="year">2026</span> ATLAI. Made with ❤️ on a Mac.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
