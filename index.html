@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MacBuddy — Your friendly Mac companion</title>
-  <meta name="description" content="MacBuddy is a tiny, friendly menu-bar app for macOS. Six handy tools — Space Shortcut, Screenshot, Keep Awake, Clipboard, System Monitor, Picture Converter — wrapped in one tidy app." />
+  <meta name="description" content="MacBuddy is a tiny, friendly menu-bar app for macOS. Six handy tools — Screenshot, Keep Awake, Clipboard, System Monitor, Picture Converter, QR Code — wrapped in one tidy app." />
   <meta name="theme-color" content="#f7f3ec" />
   <link rel="icon" type="image/png" href="img/macbuddy_icon.png" />
   <link rel="apple-touch-icon" href="img/macbuddy_icon.png" />
@@ -40,10 +40,10 @@
           <span class="eyebrow">macOS · Menu-bar app</span>
           <h1>Your friendly<br />Mac companion.</h1>
           <p class="lede">
-            Six handy menu-bar tools, wrapped in one tidy app. Capture screenshots,
-            launch apps with Space, keep your Mac awake, browse clipboard history,
-            watch CPU + memory, and convert pictures — all from a single buddy in
-            your menu bar.
+            Six handy menu-bar tools, wrapped in one tidy app. Capture and translate
+            screenshots, generate QR codes, keep your Mac awake, browse clipboard
+            history, watch CPU + memory, and convert pictures — all from a single
+            buddy in your menu bar.
           </p>
           <div class="cta-row">
             <a href="#download" class="btn btn-primary">
@@ -56,7 +56,7 @@
         </div>
 
         <div class="hero-art">
-          <img src="img/screenshots/general.png" alt="MacBuddy Settings window" class="hero-shot" />
+          <img src="img/screenshots/menu.png" alt="MacBuddy menu-bar dropdown" class="hero-shot" />
           <img src="img/macbuddy_icon.png" alt="MacBuddy app icon" class="hero-icon" />
         </div>
       </div>
@@ -71,15 +71,9 @@
 
       <div class="feature-grid">
         <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">␣</div>
-          <h3>Space Shortcut</h3>
-          <p>Hold <kbd>Space</kbd> and tap a key to instantly launch or focus your most-used apps.</p>
-        </article>
-
-        <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">⌘⇧4</div>
           <h3>Screenshot</h3>
-          <p>Capture a region of the screen with a global hotkey, then annotate, copy, save, or pin it.</p>
+          <p>Region capture with a global hotkey, then annotate, translate, copy, save, or pin the result.</p>
         </article>
 
         <article class="feature-card">
@@ -91,7 +85,7 @@
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">📋</div>
           <h3>Clipboard</h3>
-          <p>Keeps a history of recent clipboard items so you can paste anything you copied earlier.</p>
+          <p>Keeps a searchable history of recent clipboard items, including images. Pin the ones you reuse.</p>
         </article>
 
         <article class="feature-card">
@@ -105,6 +99,12 @@
           <h3>Picture Converter</h3>
           <p>Drag-and-drop converter between PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2.</p>
         </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">▦</div>
+          <h3>QR Code</h3>
+          <p>Generate scannable QR codes with custom colors, dot &amp; eye shapes, and an embedded logo.</p>
+        </article>
       </div>
     </section>
 
@@ -112,35 +112,35 @@
     <section id="screenshots" class="shots">
       <div class="section-head">
         <h2>A peek inside</h2>
-        <p>Settings, hotkeys, clipboard history, and the menu-bar status item.</p>
-      </div>
-
-      <div class="shot-row">
-        <figure class="shot">
-          <img src="img/screenshots/space-shortcut.png" alt="Space Shortcut bindings" loading="lazy" />
-          <figcaption>Bind any app to <kbd>Space</kbd> + key — chord HUD shows on hold.</figcaption>
-        </figure>
-        <figure class="shot">
-          <img src="img/screenshots/clipboard.png" alt="Clipboard history" loading="lazy" />
-          <figcaption>Search the last <em>n</em> things you copied. Pin the ones you reuse.</figcaption>
-        </figure>
+        <p>Capture and translate, generate QR codes, browse clipboard history, and tune every tool from Settings.</p>
       </div>
 
       <div class="shot-row">
         <figure class="shot wide">
-          <img src="img/screenshots/screenshot-tool.png" alt="Screenshot annotator" loading="lazy" />
-          <figcaption>Region capture → annotate → copy / save / pin. Five tools, colour palette, undo.</figcaption>
+          <img src="img/screenshots/screenshot-translate.png" alt="Screenshot annotator with translate panel" loading="lazy" />
+          <figcaption>Region capture → annotate → translate. Pick a target language and the captured text is rendered back in place.</figcaption>
         </figure>
       </div>
 
       <div class="shot-row">
         <figure class="shot">
-          <img src="img/screenshots/system-monitor.png" alt="System Monitor in menu bar" loading="lazy" />
-          <figcaption>Live CPU + memory in the menu bar, your way.</figcaption>
+          <img src="img/screenshots/qr-code.png" alt="QR Code generator" loading="lazy" />
+          <figcaption>Custom colours, dot &amp; eye shapes, and an embedded logo — copy or save as PNG.</figcaption>
         </figure>
+        <figure class="shot">
+          <img src="img/screenshots/clipboard.png" alt="Clipboard history" loading="lazy" />
+          <figcaption>Search the last <em>n</em> things you copied — text or images. Pin the ones you reuse.</figcaption>
+        </figure>
+      </div>
+
+      <div class="shot-row">
         <figure class="shot">
           <img src="img/screenshots/general.png" alt="General settings" loading="lazy" />
           <figcaption>Toggle features on or off. Hover the info dot for what each does.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/screenshots/system-monitor.png" alt="System Monitor settings" loading="lazy" />
+          <figcaption>Live CPU + memory in the menu bar, formatted your way.</figcaption>
         </figure>
       </div>
     </section>
