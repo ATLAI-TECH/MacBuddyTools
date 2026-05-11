@@ -79,7 +79,7 @@
       'support.question.title': 'Ask a question',
       'support.question.desc': 'Stuck on permissions or hotkeys? Drop a question.',
       'support.question.cta': 'Ask a question →',
-      'support.note': 'No GitHub account needed — your feedback goes straight to our issue tracker. Prefer email? <a href="mailto:atlasbioin4@gmail.com?subject=MacBuddy%20feedback">atlasbioin4@gmail.com</a>.',
+      'support.note': 'No GitHub account needed — your feedback goes straight to our issue tracker. Prefer email? <a href="mailto:dev@atlai.co.uk?subject=MacBuddy%20feedback">dev@atlai.co.uk</a>.',
 
       'footer.fine': '© {year} ATLAI. Made with ❤️ on a Mac.',
 
@@ -187,7 +187,7 @@
       'support.question.title': 'Poser une question',
       'support.question.desc': 'Bloqué sur les permissions ou les raccourcis ? Posez une question.',
       'support.question.cta': 'Poser une question →',
-      'support.note': "Pas besoin de compte GitHub — vos retours arrivent directement à notre suivi de tickets. Préférez l'e-mail ? <a href=\"mailto:atlasbioin4@gmail.com?subject=MacBuddy%20feedback\">atlasbioin4@gmail.com</a>.",
+      'support.note': "Pas besoin de compte GitHub — vos retours arrivent directement à notre suivi de tickets. Préférez l'e-mail ? <a href=\"mailto:dev@atlai.co.uk?subject=MacBuddy%20feedback\">dev@atlai.co.uk</a>.",
 
       'footer.fine': '© {year} ATLAI. Fait avec ❤️ sur un Mac.',
 
@@ -295,7 +295,7 @@
       'support.question.title': 'Frage stellen',
       'support.question.desc': 'Probleme mit Berechtigungen oder Tastenkürzeln? Stell eine Frage.',
       'support.question.cta': 'Frage stellen →',
-      'support.note': 'Kein GitHub-Konto nötig — dein Feedback geht direkt in unseren Issue-Tracker. Lieber per E-Mail? <a href="mailto:atlasbioin4@gmail.com?subject=MacBuddy%20feedback">atlasbioin4@gmail.com</a>.',
+      'support.note': 'Kein GitHub-Konto nötig — dein Feedback geht direkt in unseren Issue-Tracker. Lieber per E-Mail? <a href="mailto:dev@atlai.co.uk?subject=MacBuddy%20feedback">dev@atlai.co.uk</a>.',
 
       'footer.fine': '© {year} ATLAI. Mit ❤️ auf einem Mac gemacht.',
 
@@ -403,7 +403,7 @@
       'support.question.title': '提个问题',
       'support.question.desc': '权限或快捷键卡住了？随时提问。',
       'support.question.cta': '提交问题 →',
-      'support.note': '无需 GitHub 账号 —— 你的反馈直接进入我们的 Issue 跟踪。喜欢邮件？<a href="mailto:atlasbioin4@gmail.com?subject=MacBuddy%20feedback">atlasbioin4@gmail.com</a>。',
+      'support.note': '无需 GitHub 账号 —— 你的反馈直接进入我们的 Issue 跟踪。喜欢邮件？<a href="mailto:dev@atlai.co.uk?subject=MacBuddy%20feedback">dev@atlai.co.uk</a>。',
 
       'footer.fine': '© {year} ATLAI。用 ❤️ 在 Mac 上做的。',
 
@@ -511,7 +511,7 @@
       'support.question.title': 'Hacer una pregunta',
       'support.question.desc': '¿Atascado con permisos o atajos? Lanza tu pregunta.',
       'support.question.cta': 'Hacer pregunta →',
-      'support.note': 'No necesitas cuenta de GitHub — tus comentarios van directos a nuestro tracker. ¿Prefieres email? <a href="mailto:atlasbioin4@gmail.com?subject=MacBuddy%20feedback">atlasbioin4@gmail.com</a>.',
+      'support.note': 'No necesitas cuenta de GitHub — tus comentarios van directos a nuestro tracker. ¿Prefieres email? <a href="mailto:dev@atlai.co.uk?subject=MacBuddy%20feedback">dev@atlai.co.uk</a>.',
 
       'footer.fine': '© {year} ATLAI. Hecho con ❤️ en un Mac.',
 
@@ -619,7 +619,7 @@
       'support.question.title': 'Задать вопрос',
       'support.question.desc': 'Застряли на разрешениях или горячих клавишах? Задайте вопрос.',
       'support.question.cta': 'Задать вопрос →',
-      'support.note': 'GitHub-аккаунт не нужен — ваши отзывы попадают прямо в наш трекер задач. Предпочитаете email? <a href="mailto:atlasbioin4@gmail.com?subject=MacBuddy%20feedback">atlasbioin4@gmail.com</a>.',
+      'support.note': 'GitHub-аккаунт не нужен — ваши отзывы попадают прямо в наш трекер задач. Предпочитаете email? <a href="mailto:dev@atlai.co.uk?subject=MacBuddy%20feedback">dev@atlai.co.uk</a>.',
 
       'footer.fine': '© {year} ATLAI. Сделано с ❤️ на Mac.',
 
