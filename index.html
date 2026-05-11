@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-title="doc.title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,10 +25,30 @@
       <span class="logo-word">MacBuddy</span>
     </a>
     <nav class="site-nav">
-      <a href="#screenshots">Screenshots</a>
-      <a href="#features">Features</a>
-      <a href="#support">Support</a>
-      <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener">GitHub</a>
+      <a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#support" data-i18n="nav.support">Support</a>
+      <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener" data-i18n="nav.github">GitHub</a>
+
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" data-i18n-aria-label="nav.lang_aria" aria-label="Choose language">
+          <svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span class="lang-current">EN</span>
+          <span class="lang-caret" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-menu" role="menu">
+          <li><button type="button" data-lang="en" role="menuitem">English</button></li>
+          <li><button type="button" data-lang="fr" role="menuitem">Français</button></li>
+          <li><button type="button" data-lang="de" role="menuitem">Deutsch</button></li>
+          <li><button type="button" data-lang="zh" role="menuitem">中文</button></li>
+          <li><button type="button" data-lang="es" role="menuitem">Español</button></li>
+          <li><button type="button" data-lang="ru" role="menuitem">Русский</button></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -37,9 +57,9 @@
     <section class="hero">
       <div class="hero-inner">
         <div class="hero-copy">
-          <span class="eyebrow">macOS · Menu-bar app</span>
-          <h1>Your friendly<br />Mac companion.</h1>
-          <p class="lede">
+          <span class="eyebrow" data-i18n="hero.eyebrow">macOS · Menu-bar app</span>
+          <h1 data-i18n-html="hero.title">Your friendly<br />Mac companion.</h1>
+          <p class="lede" data-i18n="hero.lede">
             Six handy menu-bar tools, wrapped in one tidy app. Capture and translate
             screenshots, generate QR codes, keep your Mac awake, browse clipboard
             history, watch CPU + memory, and convert pictures — all from a single
@@ -47,12 +67,12 @@
           </p>
           <div class="cta-row">
             <a href="#download" class="btn btn-primary">
-              <span>Download MacBuddy</span>
-              <small>Free · No Ads</small>
+              <span data-i18n="hero.btn_download">Download MacBuddy</span>
+              <small data-i18n="hero.btn_download_sub">Free · No Ads</small>
             </a>
-            <a href="#features" class="btn btn-ghost">See what's inside →</a>
+            <a href="#features" class="btn btn-ghost" data-i18n="hero.btn_inside">See what's inside →</a>
           </div>
-          <p class="hero-meta">Open-source-ish. No accounts. No subscriptions.</p>
+          <p class="hero-meta" data-i18n="hero.meta">Open-source-ish. No accounts. No subscriptions.</p>
         </div>
 
         <div class="hero-art">
@@ -65,54 +85,54 @@
     <!-- ====== SCREENSHOTS ====== -->
     <section id="screenshots" class="shots">
       <div class="section-head">
-        <h2>A peek inside</h2>
-        <p>Capture and translate, generate QR codes, browse clipboard history, and tune every tool from Settings.</p>
+        <h2 data-i18n="shots.heading">A peek inside</h2>
+        <p data-i18n="shots.sub">Capture and translate, generate QR codes, browse clipboard history, and tune every tool from Settings.</p>
       </div>
 
       <div class="shot-row">
         <figure class="shot wide">
           <img src="img/screenshots/screenshot-translate.png" alt="Screenshot annotator with translate panel" loading="lazy" />
-          <figcaption>Region capture → annotate → translate. Pick a target language and the captured text is rendered back in place.</figcaption>
+          <figcaption data-i18n-html="shots.cap1">Region capture → annotate → translate. Pick a target language and the captured text is rendered back in place.</figcaption>
         </figure>
       </div>
 
       <div class="shot-row">
         <figure class="shot">
           <img src="img/screenshots/qr-code.png" alt="QR Code generator" loading="lazy" />
-          <figcaption>Custom colours, dot &amp; eye shapes, and an embedded logo — copy or save as PNG.</figcaption>
+          <figcaption data-i18n-html="shots.cap2">Custom colours, dot &amp; eye shapes, and an embedded logo — copy or save as PNG.</figcaption>
         </figure>
         <figure class="shot">
           <img src="img/screenshots/clipboard.png" alt="Clipboard history" loading="lazy" />
-          <figcaption>Search the last <em>n</em> things you copied — text or images. Pin the ones you reuse.</figcaption>
+          <figcaption data-i18n-html="shots.cap3">Search the last <em>n</em> things you copied — text or images. Pin the ones you reuse.</figcaption>
         </figure>
       </div>
 
       <div class="shot-row">
         <figure class="shot wide">
           <img src="img/screenshots/keep-awake.png" alt="Keep Awake with duration picker" loading="lazy" />
-          <figcaption>Keep your Mac awake for 15 minutes, an hour, or indefinitely — pick a duration straight from the menu bar.</figcaption>
+          <figcaption data-i18n-html="shots.cap4">Keep your Mac awake for 15 minutes, an hour, or indefinitely — pick a duration straight from the menu bar.</figcaption>
         </figure>
       </div>
 
       <div class="shot-row">
         <figure class="shot">
           <img src="img/screenshots/menu.png" alt="MacBuddy menu-bar dropdown" loading="lazy" />
-          <figcaption>Everything lives in the menu bar — open any tool from one tidy dropdown.</figcaption>
+          <figcaption data-i18n-html="shots.cap5">Everything lives in the menu bar — open any tool from one tidy dropdown.</figcaption>
         </figure>
         <figure class="shot">
           <img src="img/screenshots/menu-bar.png" alt="Menu Bar settings — choose which tools appear" loading="lazy" />
-          <figcaption>Pick which tools show in the dropdown — hidden ones still run in the background.</figcaption>
+          <figcaption data-i18n-html="shots.cap6">Pick which tools show in the dropdown — hidden ones still run in the background.</figcaption>
         </figure>
       </div>
 
       <div class="shot-row">
         <figure class="shot">
           <img src="img/screenshots/screenshot-settings.png" alt="Screenshot settings — choose a trigger shortcut" loading="lazy" />
-          <figcaption>Three hotkey styles to choose from — Snipaste, CleanShot X, or Shottr — to avoid conflicts.</figcaption>
+          <figcaption data-i18n-html="shots.cap7">Three hotkey styles to choose from — Snipaste, CleanShot X, or Shottr — to avoid conflicts.</figcaption>
         </figure>
         <figure class="shot">
           <img src="img/screenshots/system-monitor.png" alt="System Monitor settings" loading="lazy" />
-          <figcaption>Live CPU + memory in the menu bar, formatted your way.</figcaption>
+          <figcaption data-i18n-html="shots.cap8">Live CPU + memory in the menu bar, formatted your way.</figcaption>
         </figure>
       </div>
     </section>
@@ -120,45 +140,45 @@
     <!-- ====== FEATURES ====== -->
     <section id="features" class="features">
       <div class="section-head">
-        <h2>Six tools, one menu-bar app</h2>
-        <p>Each tool is independent — turn off the ones you don't need from Settings.</p>
+        <h2 data-i18n="features.heading">Six tools, one menu-bar app</h2>
+        <p data-i18n="features.sub">Each tool is independent — turn off the ones you don't need from Settings.</p>
       </div>
 
       <div class="feature-grid">
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">⌘⇧4</div>
-          <h3>Screenshot</h3>
-          <p>Region capture with a global hotkey, then annotate, translate, copy, save, or pin the result.</p>
+          <h3 data-i18n="feat.screenshot.title">Screenshot</h3>
+          <p data-i18n="feat.screenshot.desc">Region capture with a global hotkey, then annotate, translate, copy, save, or pin the result.</p>
         </article>
 
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">☕</div>
-          <h3>Keep Awake</h3>
-          <p>Prevents your Mac from sleeping or dimming the display for a chosen duration.</p>
+          <h3 data-i18n="feat.keepawake.title">Keep Awake</h3>
+          <p data-i18n="feat.keepawake.desc">Prevents your Mac from sleeping or dimming the display for a chosen duration.</p>
         </article>
 
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">📋</div>
-          <h3>Clipboard</h3>
-          <p>Keeps a searchable history of recent clipboard items, including images. Pin the ones you reuse.</p>
+          <h3 data-i18n="feat.clipboard.title">Clipboard</h3>
+          <p data-i18n="feat.clipboard.desc">Keeps a searchable history of recent clipboard items, including images. Pin the ones you reuse.</p>
         </article>
 
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">📈</div>
-          <h3>System Monitor</h3>
-          <p>Adds a menu-bar status item showing live CPU, memory, and other system stats.</p>
+          <h3 data-i18n="feat.monitor.title">System Monitor</h3>
+          <p data-i18n="feat.monitor.desc">Adds a menu-bar status item showing live CPU, memory, and other system stats.</p>
         </article>
 
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">🖼️</div>
-          <h3>Picture Converter</h3>
-          <p>Drag-and-drop converter between PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2.</p>
+          <h3 data-i18n="feat.picture.title">Picture Converter</h3>
+          <p data-i18n="feat.picture.desc">Drag-and-drop converter between PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2.</p>
         </article>
 
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">▦</div>
-          <h3>QR Code</h3>
-          <p>Generate scannable QR codes with custom colors, dot &amp; eye shapes, and an embedded logo.</p>
+          <h3 data-i18n="feat.qr.title">QR Code</h3>
+          <p data-i18n="feat.qr.desc">Generate scannable QR codes with custom colors, dot &amp; eye shapes, and an embedded logo.</p>
         </article>
       </div>
     </section>
@@ -168,14 +188,14 @@
       <div class="download-inner">
         <img src="img/macbuddy_icon.png" alt="" class="download-icon" />
         <div>
-          <h2>Get MacBuddy</h2>
-          <p>Free. No ads. Apple Silicon &amp; Intel.</p>
+          <h2 data-i18n="download.heading">Get MacBuddy</h2>
+          <p data-i18n-html="download.sub">Free. No ads. Apple Silicon &amp; Intel.</p>
           <div class="cta-row">
             <a href="https://github.com/ATLAI-TECH/MacBuddyTools/releases" target="_blank" rel="noopener" class="btn btn-primary">
-              <span>Download latest release</span>
-              <small>from GitHub</small>
+              <span data-i18n="download.btn">Download latest release</span>
+              <small data-i18n="download.btn_sub">from GitHub</small>
             </a>
-            <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener" class="btn btn-ghost">View source on GitHub →</a>
+            <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="download.view">View source on GitHub →</a>
           </div>
         </div>
       </div>
@@ -184,34 +204,34 @@
     <!-- ====== SUPPORT ====== -->
     <section id="support" class="support">
       <div class="section-head">
-        <h2>Support &amp; feedback</h2>
-        <p>Found a bug? Want a new tool inside MacBuddy? Tell us — issues land straight in the project's GitHub.</p>
+        <h2 data-i18n-html="support.heading">Support &amp; feedback</h2>
+        <p data-i18n="support.sub">Found a bug? Want a new tool inside MacBuddy? Tell us — issues land straight in the project's GitHub.</p>
       </div>
 
       <div class="support-grid">
         <a class="support-card support-bug" href="support.html?kind=bug">
           <div class="support-icon" aria-hidden="true">🐛</div>
-          <h3>Report a bug</h3>
-          <p>Something not working? Open a bug report — we'll be notified on GitHub.</p>
-          <span class="support-cta">Open bug report →</span>
+          <h3 data-i18n="support.bug.title">Report a bug</h3>
+          <p data-i18n="support.bug.desc">Something not working? Open a bug report — we'll be notified on GitHub.</p>
+          <span class="support-cta" data-i18n="support.bug.cta">Open bug report →</span>
         </a>
 
         <a class="support-card support-feature" href="support.html?kind=feature">
           <div class="support-icon" aria-hidden="true">✨</div>
-          <h3>Suggest a feature</h3>
-          <p>Got an idea for a new tool inside MacBuddy? Pitch it.</p>
-          <span class="support-cta">Suggest a feature →</span>
+          <h3 data-i18n="support.feature.title">Suggest a feature</h3>
+          <p data-i18n="support.feature.desc">Got an idea for a new tool inside MacBuddy? Pitch it.</p>
+          <span class="support-cta" data-i18n="support.feature.cta">Suggest a feature →</span>
         </a>
 
         <a class="support-card support-question" href="support.html?kind=question">
           <div class="support-icon" aria-hidden="true">💬</div>
-          <h3>Ask a question</h3>
-          <p>Stuck on permissions or hotkeys? Drop a question.</p>
-          <span class="support-cta">Ask a question →</span>
+          <h3 data-i18n="support.question.title">Ask a question</h3>
+          <p data-i18n="support.question.desc">Stuck on permissions or hotkeys? Drop a question.</p>
+          <span class="support-cta" data-i18n="support.question.cta">Ask a question →</span>
         </a>
       </div>
 
-      <p class="support-note">
+      <p class="support-note" data-i18n-html="support.note">
         No GitHub account needed — your feedback goes straight to our issue tracker.
         Prefer email? <a href="mailto:atlasbioin4@gmail.com?subject=MacBuddy%20feedback">atlasbioin4@gmail.com</a>.
       </p>
@@ -225,13 +245,13 @@
         <span>MacBuddy · by ATLAI</span>
       </div>
       <nav class="footer-nav">
-        <a href="#features">Features</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#support">Support</a>
-        <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener">GitHub</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a>
+        <a href="#support" data-i18n="nav.support">Support</a>
+        <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener" data-i18n="nav.github">GitHub</a>
         <a href="https://termbuddy.atlai.co.uk/" target="_blank" rel="noopener">TermBuddy ↗</a>
       </nav>
-      <p class="footer-fine">© <span id="year">2026</span> ATLAI. Made with ❤️ on a Mac.</p>
+      <p class="footer-fine" data-i18n="footer.fine">© 2026 ATLAI. Made with ❤️ on a Mac.</p>
     </div>
   </footer>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-title="sp.doc.title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -150,35 +150,58 @@
       <span class="logo-word">MacBuddy</span>
     </a>
     <nav class="site-nav">
-      <a href="/">Home</a>
-      <a href="/#features">Features</a>
-      <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener">GitHub</a>
+      <a href="/" data-i18n="nav.home">Home</a>
+      <a href="/#features" data-i18n="nav.features">Features</a>
+      <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener" data-i18n="nav.github">GitHub</a>
+
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" data-i18n-aria-label="nav.lang_aria" aria-label="Choose language">
+          <svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span class="lang-current">EN</span>
+          <span class="lang-caret" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-menu" role="menu">
+          <li><button type="button" data-lang="en" role="menuitem">English</button></li>
+          <li><button type="button" data-lang="fr" role="menuitem">Français</button></li>
+          <li><button type="button" data-lang="de" role="menuitem">Deutsch</button></li>
+          <li><button type="button" data-lang="zh" role="menuitem">中文</button></li>
+          <li><button type="button" data-lang="es" role="menuitem">Español</button></li>
+          <li><button type="button" data-lang="ru" role="menuitem">Русский</button></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main class="support-page">
-    <a href="/" class="back-link">&larr; Back to MacBuddy</a>
+    <a href="/" class="back-link" data-i18n="sp.back">&larr; Back to MacBuddy</a>
 
     <div class="section-head">
-      <h1>Support & Feedback</h1>
-      <p>Found a bug? Want a new feature? Have a question? Submit it below — no GitHub account needed. Your report goes straight to our issue tracker.</p>
+      <h1 data-i18n-html="sp.heading">Support & Feedback</h1>
+      <p data-i18n="sp.sub">Found a bug? Want a new feature? Have a question? Submit it below — no GitHub account needed. Your report goes straight to our issue tracker.</p>
     </div>
 
     <div class="kind-tabs">
       <button class="kind-tab active" data-kind="bug">
-        <span class="tab-icon">&#x1F41B;</span> Report a Bug
+        <span class="tab-icon" aria-hidden="true">&#x1F41B;</span>
+        <span data-i18n="sp.tab.bug">Report a Bug</span>
       </button>
       <button class="kind-tab" data-kind="feature">
-        <span class="tab-icon">&#x2728;</span> Suggest a Feature
+        <span class="tab-icon" aria-hidden="true">&#x2728;</span>
+        <span data-i18n="sp.tab.feature">Suggest a Feature</span>
       </button>
       <button class="kind-tab" data-kind="question">
-        <span class="tab-icon">&#x1F4AC;</span> Ask a Question
+        <span class="tab-icon" aria-hidden="true">&#x1F4AC;</span>
+        <span data-i18n="sp.tab.question">Ask a Question</span>
       </button>
     </div>
 
     <form id="issue-form" class="form-card">
       <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title" data-i18n="sp.form.title_label">Title</label>
         <span class="hint" id="title-hint">A short summary of the bug</span>
         <input type="text" id="title" name="title" required maxlength="200" placeholder="e.g. Screenshot tool crashes on dual monitors" />
       </div>
@@ -190,21 +213,21 @@
       </div>
 
       <div class="form-group conditional" id="steps-group">
-        <label for="steps">Steps to Reproduce</label>
-        <span class="hint">How can we reproduce this bug?</span>
-        <textarea id="steps" name="steps" maxlength="2000" rows="4" placeholder="1. Open MacBuddy&#10;2. Click on...&#10;3. ..."></textarea>
+        <label for="steps" data-i18n="sp.form.steps_label">Steps to Reproduce</label>
+        <span class="hint" data-i18n="sp.form.steps_hint">How can we reproduce this bug?</span>
+        <textarea id="steps" name="steps" maxlength="2000" rows="4" data-i18n-placeholder="sp.form.steps_ph" placeholder="1. Open MacBuddy&#10;2. Click on...&#10;3. ..."></textarea>
       </div>
 
       <div class="form-group conditional" id="env-group">
-        <label for="environment">Environment</label>
-        <span class="hint">macOS version, MacBuddy version, Mac model</span>
-        <input type="text" id="environment" name="environment" maxlength="200" placeholder="e.g. macOS 15.1, MacBuddy 1.2, MacBook Air M2" />
+        <label for="environment" data-i18n="sp.form.env_label">Environment</label>
+        <span class="hint" data-i18n="sp.form.env_hint">macOS version, MacBuddy version, Mac model</span>
+        <input type="text" id="environment" name="environment" maxlength="200" data-i18n-placeholder="sp.form.env_ph" placeholder="e.g. macOS 15.1, MacBuddy 1.2, MacBook Air M2" />
       </div>
 
       <div class="form-group">
-        <label for="contact">Contact (optional)</label>
-        <span class="hint">Email if you'd like us to follow up with you</span>
-        <input type="email" id="contact" name="contact" maxlength="200" placeholder="you@example.com" />
+        <label for="contact" data-i18n="sp.form.contact_label">Contact (optional)</label>
+        <span class="hint" data-i18n="sp.form.contact_hint">Email if you'd like us to follow up with you</span>
+        <input type="email" id="contact" name="contact" maxlength="200" data-i18n-placeholder="sp.form.contact_ph" placeholder="you@example.com" />
       </div>
 
       <div class="submit-row">
@@ -221,16 +244,17 @@
         <span>MacBuddy &middot; by ATLAI</span>
       </div>
       <nav class="footer-nav">
-        <a href="/">Home</a>
-        <a href="/#features">Features</a>
-        <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener">GitHub</a>
+        <a href="/" data-i18n="nav.home">Home</a>
+        <a href="/#features" data-i18n="nav.features">Features</a>
+        <a href="https://github.com/ATLAI-TECH/MacBuddyTools" target="_blank" rel="noopener" data-i18n="nav.github">GitHub</a>
       </nav>
-      <p class="footer-fine">&copy; <span id="year">2026</span> ATLAI. Made with &#10084;&#65039; on a Mac.</p>
+      <p class="footer-fine" data-i18n="footer.fine">&copy; 2026 ATLAI. Made with &#10084;&#65039; on a Mac.</p>
     </div>
   </footer>
 
+  <script src="js/script.js" defer></script>
   <script>
-  (function () {
+  function initSupportForm() {
     const WORKER_URL = 'https://macbuddy-issues.haopeng-yu.workers.dev';
 
     let currentKind = 'bug';
@@ -244,63 +268,42 @@
     const stepsGroup = document.getElementById('steps-group');
     const envGroup = document.getElementById('env-group');
 
-    const kindConfig = {
-      bug: {
-        titleHint: 'A short summary of the bug',
-        titlePlaceholder: 'e.g. Screenshot tool crashes on dual monitors',
-        descLabel: 'Description',
-        descHint: 'Describe what happened and what you expected',
-        descPlaceholder: 'Describe the issue in detail...',
-        showSteps: true,
-        showEnv: true,
-        submitText: 'Submit Report',
-      },
-      feature: {
-        titleHint: 'A short name for the feature',
-        titlePlaceholder: 'e.g. Dark mode support',
-        descLabel: 'Feature Description',
-        descHint: 'What would this feature do and why is it useful?',
-        descPlaceholder: 'Describe the feature you\'d like to see...',
-        showSteps: false,
-        showEnv: false,
-        submitText: 'Submit Suggestion',
-      },
-      question: {
-        titleHint: 'What is your question about?',
-        titlePlaceholder: 'e.g. How do I change the screenshot hotkey?',
-        descLabel: 'Details',
-        descHint: 'Provide context so we can help you',
-        descPlaceholder: 'Describe your question and what you\'ve tried...',
-        showSteps: false,
-        showEnv: true,
-        submitText: 'Submit Question',
-      },
+    const KIND_CONFIG = {
+      bug:      { showSteps: true,  showEnv: true  },
+      feature:  { showSteps: false, showEnv: false },
+      question: { showSteps: false, showEnv: true  },
     };
 
-    function updateForm(kind) {
-      currentKind = kind;
-      const cfg = kindConfig[kind];
+    function t(key) {
+      return (window.MacBuddyI18N && window.MacBuddyI18N.t(key)) || '';
+    }
 
-      document.querySelectorAll('.kind-tab').forEach(t => {
-        t.classList.toggle('active', t.dataset.kind === kind);
+    function applyKind(kind) {
+      currentKind = kind;
+      const cfg = KIND_CONFIG[kind];
+
+      document.querySelectorAll('.kind-tab').forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.kind === kind);
       });
 
-      titleHint.textContent = cfg.titleHint;
-      document.getElementById('title').placeholder = cfg.titlePlaceholder;
-      descLabel.textContent = cfg.descLabel;
-      descHint.textContent = cfg.descHint;
-      document.getElementById('description').placeholder = cfg.descPlaceholder;
+      titleHint.textContent = t('sp.form.title_hint.' + kind);
+      document.getElementById('title').placeholder = t('sp.form.title_ph.' + kind);
+      descLabel.textContent = t('sp.form.desc_label.' + kind);
+      descHint.textContent = t('sp.form.desc_hint.' + kind);
+      document.getElementById('description').placeholder = t('sp.form.desc_ph.' + kind);
       stepsGroup.classList.toggle('visible', cfg.showSteps);
       envGroup.classList.toggle('visible', cfg.showEnv);
-      submitBtn.textContent = cfg.submitText;
+      submitBtn.textContent = t('sp.form.submit.' + kind);
 
       statusMsg.textContent = '';
       statusMsg.className = 'status-msg';
     }
 
     document.querySelectorAll('.kind-tab').forEach(tab => {
-      tab.addEventListener('click', () => updateForm(tab.dataset.kind));
+      tab.addEventListener('click', () => applyKind(tab.dataset.kind));
     });
+
+    document.addEventListener('langchange', () => applyKind(currentKind));
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -312,13 +315,13 @@
       const contact = document.getElementById('contact').value.trim();
 
       if (!title || !description) {
-        statusMsg.textContent = 'Please fill in the title and description.';
+        statusMsg.textContent = t('sp.form.error_required');
         statusMsg.className = 'status-msg error';
         return;
       }
 
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Submitting...';
+      submitBtn.textContent = t('sp.form.submitting');
       statusMsg.textContent = '';
 
       try {
@@ -338,30 +341,32 @@
         const data = await res.json();
 
         if (res.ok && data.success) {
-          statusMsg.textContent = 'Submitted successfully! Thank you for your feedback.';
+          statusMsg.textContent = t('sp.form.success');
           statusMsg.className = 'status-msg success';
           form.reset();
-          updateForm(currentKind);
+          applyKind(currentKind);
         } else {
-          statusMsg.textContent = data.error || 'Something went wrong. Please try again.';
+          statusMsg.textContent = data.error || t('sp.form.error_generic');
           statusMsg.className = 'status-msg error';
         }
       } catch (err) {
-        statusMsg.textContent = 'Network error. Please check your connection and try again.';
+        statusMsg.textContent = t('sp.form.error_network');
         statusMsg.className = 'status-msg error';
       }
 
       submitBtn.disabled = false;
-      submitBtn.textContent = kindConfig[currentKind].submitText;
+      submitBtn.textContent = t('sp.form.submit.' + currentKind);
     });
 
-    // Init — check URL param
     const urlKind = new URLSearchParams(window.location.search).get('kind');
-    updateForm(kindConfig[urlKind] ? urlKind : 'bug');
+    applyKind(KIND_CONFIG[urlKind] ? urlKind : 'bug');
+  }
 
-    const yearEl = document.getElementById('year');
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
-  })();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSupportForm);
+  } else {
+    initSupportForm();
+  }
   </script>
 </body>
 </html>
